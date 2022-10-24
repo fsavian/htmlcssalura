@@ -1,0 +1,198 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --botao-azul-efeito: #79e6e6;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.principal {
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.background-image {
+    position: relative;
+}
+
+.container__caixa {
+    margin: 0 0 0 4em;
+    top: 6em;
+    order: -1;
+    position: absolute;
+    max-width: 33%;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao {
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+.secundario {
+    align-items: center;
+    justify-content: center;
+}
+
+.secundario__imagem {
+    width: 70%;
+    margin: 0 6em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    font-size: 16px;
+    color: var(--cinza-secundario);
+    margin-bottom: 1em;
+}
+
+.container__descricao {
+    margin-right: 6em;
+}
+
+.container__descricao--tres {
+    margin-left: 6em;
+}
+
+.container__botao--tres {
+    color: var(--branco-principal);
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    width: 162.68px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+}
+
+.terceario__imagem {
+    width: 70%;
+    margin: 0 6em 0 3em;
+}
+
+.dispositivos__lista {
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none;
+    margin: 3em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+/* Footer */
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__logo {
+    margin-bottom: 1em;
+    margin-top: 7em;
+}
+
+.rodape__lista {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.lista__link {
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+.lista__link--a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 16px;
+}
+
+.lista__link--a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link--a:active {
+    color: yellowgreen;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin-bottom: 2em;
+    padding:0 10em;
+}
+
+.rodape__final {
+    margin-bottom: 5em;
+}
+
